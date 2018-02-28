@@ -1,10 +1,43 @@
 <html>
 <body>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+<h1>COMP 5421 Project 1: Intelligent Scissors</h1>
+    
+<h2> Artifact</h2>
 
-    <p> <img src=imgs/artifact.png> </img> </p>
+    <p> <img src=imgs/artifact.png style="width:400px"/>  </p>
+
+<h2> Intelligent Scissors Images and Masks</h2>
+
+<table style="width:100%" border="1">
+  <tr>
+    <th>Original</th>
+    <th>Mask</th> 
+    <th>Contour</th>
+  </tr>
+  <tr>
+      <td><img src="imgs/logo_eye.bmp" alt="COMP 5421 Logo" style="width:200px;" class="center"/></td>
+    <td><img src="imgs/5421bw.bmp" alt="COMP 5421 Logo" style="width:200px;"/></td> 
+    <td><img src="imgs/5421contour.bmp" alt="COMP 5421 Logo" style="width:200px;"/></td> 
+  </tr>
+  <tr>
+      <td><img src="imgs/len_std.bmp" alt="COMP 5421 Logo" style="width:200px;"/></td>
+    <td><img src="imgs/Lennbwmask.bmp" alt="COMP 5421 Logo" style="width:200px;"/></td> 
+    <td><img src="imgs/Lennacontour.bmp" alt="COMP 5421 Logo" style="width:200px;"/></td> 
+  </tr>
+    <tr>
+      <td><img src="imgs/Avatar.bmp" alt="COMP 5421 Logo" style="width:200px;"/></td>
+    <td><img src="imgs/Avatarbwmask.bmp" alt="COMP 5421 Logo" style="width:200px;"/></td> 
+    <td><img src="imgs/Avatarcontour.bmp" alt="COMP 5421 Logo" style="width:200px;"/></td> 
+  </tr>
+</table>
+
+<h2>Additional Features</h2>
+    <ul>
+        <li>Snapping: Snapping was implemented by searching the local 3x3 window of pixels for the pixel with the highest sum of costs (likely to be an edge pixel). </li>
+        <li>Blurring: Blurring was added as an optional feature. Blurring made the edges more blurred, and made the scissors more likely to cut through the edges rather than go around.</li>
+    
+    </ul>
 
 </body>
 </html>
